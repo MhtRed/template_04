@@ -54,7 +54,7 @@
   padding-bottom: 15px;
 }
 .pb-20 {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .pl-15 {
   padding-left: 15px;
@@ -63,6 +63,9 @@
   margin: 0px;
 }
 .m-20 {
+  margin: 20px;
+}
+.m-15 {
   margin: 20px;
 }
 .mt-0 {
@@ -174,9 +177,6 @@
 .txt-c {
   text-align: center;
 }
-.txt-c {
-  text-align: center;
-}
 .txt-l {
   text-align: left;
 }
@@ -200,6 +200,9 @@
 }
 /* End Font  */
 /* Start Border  */
+.border-ccc {
+  border: 1px solid #ccc;
+}
 .rad-6 {
   border-radius: 6px;
 }

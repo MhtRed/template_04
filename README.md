@@ -1,22 +1,22 @@
 # Template_4
 
-This is an HTML and CSS Admin Dashboard design
+This is an Admin Dashboard designed using HTML & CSS without any framework or library.
 
 ## Technologies used:
 
-- HTML (Semantic Elements)
-- CSS
-  - my own framework
+- HTML5 (Semantic Elements)
+- CSS3
+  - my own framework (I 've build my own CSS framework as I am workin on the project to take advantage of repeated CSS pattern used in this design)
   - flex box
   - CSS Grid
   - ...
 
 ## Screen sizes and breakpoints used:
 
-- sm screens: max-width: 767px
-- md screens: min-width: 768px & max-width: 991px
-- lg screens: min-width: 992px & max-width: 1199px
-- xl screens: min-width: 1200px
+- The design is almost responsive, and that was possible by the use of the grid system and the widgets model.
+- To make it fully responsive, I used only two type of screens:
+  - Mobile screens(sm): max-width: 767px
+  - laptop screens (lg): min-width: 768px
 
 ## Demo
 
