@@ -116,11 +116,17 @@
 .w-full {
   width: 100%;
 }
+.w-100 {
+  width: 100px;
+}
 .w-fit {
   width: fit-content;
 }
 .h-full {
   height: 100%;
+}
+.h-100 {
+  height: 100px;
 }
 
 /* End Width + Height  */
@@ -202,6 +208,9 @@
 /* Start Border  */
 .border-ccc {
   border: 1px solid #ccc;
+}
+.border-eee {
+  border: 1px solid #eee;
 }
 .rad-6 {
   border-radius: 6px;
