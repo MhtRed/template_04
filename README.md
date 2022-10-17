@@ -6,7 +6,7 @@ This is an Admin Dashboard designed using HTML & CSS without any framework or li
 
 - HTML5
 - CSS3
-  - my own framework (I 've build my own CSS framework as I was working on the project to take advantage of repeated CSS pattern used in this design)
+  - my own framework (I 've build my own CSS framework as I was working on the project to take advantage of repeated CSS patterns used in this design)
   - flex box
   - CSS Grid
   - ...
