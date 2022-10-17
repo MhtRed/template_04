@@ -1,3 +1,4 @@
+/* Start General Rules & Variables */
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
@@ -6,7 +7,6 @@
   --red-color: #f44336;
   --grey-color: #888;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -41,6 +41,8 @@ ul {
   background-color: #f1f5f9;
   min-height: 100vh;
 }
+/* End General Rules & Variables */
+
 /* Start Sidebar */
 .sidebar {
   width: 250px;
@@ -69,7 +71,6 @@ ul {
   bottom: -29px;
   border: 4px solid white;
 }
-
 .sidebar ul li a {
   transition: 0.3s;
   margin-bottom: 5px;
@@ -97,6 +98,7 @@ ul {
   }
 }
 /* End Sidebar */
+
 /* Start Content  */
 .content {
   overflow: hidden;
@@ -142,11 +144,9 @@ ul {
   height: 32px;
   margin-left: 20px;
 }
-
 .page h1 {
   margin: 20px 20px 40px;
 }
-
 .page h1::before,
 .page h1::after {
   content: "";
@@ -177,6 +177,7 @@ ul {
   }
 }
 /* End Content  */
+
 /* Start Welcome Widget  */
 .welcome {
   overflow: hidden;
@@ -220,6 +221,7 @@ ul {
   }
 }
 /* End Welcome Widget  */
+
 /* Start Quick-Draft Widget  */
 .quick-draft textarea {
   resize: none;
@@ -234,6 +236,7 @@ ul {
   background-color: var(--blue-alt-color);
 }
 /* End Quick-Draft Widget  */
+
 /* Start Targets Widget  */
 .targets .target-row .icon {
   width: 80px;
@@ -267,7 +270,6 @@ ul {
   width: 0px;
   height: 0px;
   border: 5px solid;
-
   bottom: -10px;
   left: 50%;
   transform: translatex(-50%);
@@ -294,6 +296,7 @@ ul {
   background-color: rgba(34, 197, 94, 0.2);
 }
 /* End Targets Widget  */
+
 /* Start Tickets Widget  */
 .tickets .box {
   border: 1px solid #ccc;
@@ -305,6 +308,7 @@ ul {
   }
 }
 /* End Tickets Widget  */
+
 /* Start News Widget  */
 .latest-news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
@@ -329,6 +333,7 @@ ul {
   }
 }
 /* End News Widget  */
+
 /* Start Tasks Widget  */
 .tasks .task-row:not(:last-of-type) {
   margin-bottom: 15px;
@@ -358,8 +363,8 @@ ul {
 .tasks .done .delete:hover {
   color: initial;
 }
-
 /* End Tasks Widget  */
+
 /* Start Latest Uploads Widget  */
 .latest-uploads ul li:not(:last-of-type) {
   border-bottom: 1px solid #eee;
@@ -369,6 +374,7 @@ ul {
   height: 40px;
 }
 /* End Latest Uploads Widget  */
+
 /* Start Last Project Progress Widget  */
 .last-project ul::before {
   content: "";
@@ -407,6 +413,7 @@ ul {
   opacity: 0.2;
 }
 /* End Last Project Progress Widget  */
+
 /* Start Reminders Widget  */
 .reminders ul li .key {
   width: 15px;
@@ -425,6 +432,7 @@ ul {
   border-left: 2px solid var(--red-color);
 }
 /* End Reminders Widget  */
+
 /* Start Latest Post Widget  */
 .latest-post .avatar {
   width: 48px;
@@ -486,7 +494,8 @@ ul {
   background-color: #0077b5;
 }
 /* End Social Media Widget  */
-/* start Projects Table  */
+
+/* Start Projects Table  */
 .projects .responsibe-table {
   overflow-x: auto;
 }
@@ -526,7 +535,8 @@ ul {
   font-size: 13px;
 }
 /* End Projects Table  */
-/* Start Settings Table  */
+
+/* Start Settings Page  */
 .settings-page {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
@@ -684,7 +694,6 @@ ul {
   border-color: var(--blue-color);
   color: var(--blue-color);
 }
-
 /* Start Toggle */
 .toggle-checkbox {
   -webkit-appearance: none;
@@ -732,6 +741,7 @@ ul {
   color: #bbb;
 }
 /* End Settings Table  */
+
 /* Start Profile Page  */
 .profile-page .avatar-box {
   width: 300px;
@@ -840,7 +850,6 @@ ul {
   border-radius: 50%;
   margin-right: 10px;
 }
-
 @media (max-width: 767px) {
   .profile-page .activities .activity {
     flex-direction: column;
@@ -963,8 +972,7 @@ ul {
 }
 /* End Projects Page  */
 
-/* Start Coures Page  */
-
+/* Start Courses Page  */
 .courses-page {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
@@ -1006,7 +1014,7 @@ ul {
 .courses-page .course .desc {
   line-height: 1.6;
 }
-/* End Coures Page  */
+/* End Courses Page  */
 
 /* Start Friends Page  */
 .friends-page {
@@ -1058,6 +1066,16 @@ ul {
 /* End Friends Page  */
 
 /* Start Files Page  */
+.files-page {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .files-page {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
 .files-page .files-stats {
   min-width: 260px;
 }
@@ -1093,10 +1111,86 @@ ul {
 .files-page .files-stats .upload:hover i {
   animation: go-up 0.8s infinite;
 }
-
+.files-page .files-content {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.files-page .files-content .file img {
+  width: 64px;
+  height: 64px;
+  transition: 0.3s;
+}
+.files-page .files-content .file:hover img {
+  transform: rotate(5deg);
+}
+.files-page .files-content .file .info {
+  border-top: 1px solid #eee;
+}
+.files-page .files-content {
+}
 /* End Files Page  */
 
-/* start Animations  */
+/* Start Plans Page  */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(250px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.plans-page .plan .top {
+  border: 3px solid white;
+}
+.plans-page .plan.green .top {
+  outline: 3px solid var(--green-color);
+}
+.plans-page .plan.blue .top {
+  outline: 3px solid var(--blue-color);
+}
+.plans-page .plan.orange .top {
+  outline: 3px solid var(--orange-color);
+}
+.plans-page .plan .price {
+  position: relative;
+  font-size: 40px;
+  width: fit-content;
+  margin: auto;
+}
+.plans-page .plan .price span {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 26px;
+}
+.plans-page .plan ul li {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+.plans-page .plan ul li .yes {
+  color: var(--green-color);
+}
+.plans-page .plan ul li i:not(.yes, .help) {
+  color: var(--red-color);
+}
+.plans-page .plan ul li i:first-of-type {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.plans-page .plan ul li .help {
+  color: var(--grey-color);
+  margin-left: auto;
+  cursor: pointer;
+}
+/* End Plans Page  */
+
+/* Start Animations  */
 @keyframes change-color {
   from {
     background-color: var(--blue-color);
@@ -1116,4 +1210,4 @@ ul {
     transform: translateY(0);
   }
 }
-/* End Animations  */
+/* End Animations */
