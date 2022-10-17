@@ -4,9 +4,9 @@ This is an Admin Dashboard designed using HTML & CSS without any framework or li
 
 ## Technologies used:
 
-- HTML5 (Semantic Elements)
+- HTML5
 - CSS3
-  - my own framework (I 've build my own CSS framework as I am workin on the project to take advantage of repeated CSS pattern used in this design)
+  - my own framework (I 've build my own CSS framework as I was working on the project to take advantage of repeated CSS pattern used in this design)
   - flex box
   - CSS Grid
   - ...
@@ -20,4 +20,4 @@ This is an Admin Dashboard designed using HTML & CSS without any framework or li
 
 ## Demo
 
-https://mhtred.github.io/template_04/
+Check it out on: https://mhtred.github.io/template_04/
