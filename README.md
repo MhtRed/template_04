@@ -20,4 +20,4 @@ This is an Admin Dashboard designed using HTML & CSS without any framework or li
 
 ## Demo
 
-Check it out on: https://mhtred.github.io/template_04/
+Check it out 🚀: https://mhtred.github.io/template_04/
